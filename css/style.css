@@ -3,16 +3,17 @@
 :root {
   --main-color: hsl(24, 53%, 26%);
   --contrast-color: hsl(0, 0%, 12%);
-  --highlight-color: rgb(255, 206, 101);
+  --highlight-color: hsl(38, 59%, 50%);
 
   --link-font: "Teko", sans-serif;
   --title-font: "Tomorrow", serif;
+  --content-font: "Eagle Lake", sans-serif;
 }
 
 .wrapper {
   width: 100%;
   min-width: 400px;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 /* NAV */
@@ -47,6 +48,7 @@
 
 .homepage {
   background-color: var(--main-color);
+  padding-bottom: 50px;
 }
 
 .title-card {
@@ -57,4 +59,64 @@
 
 .title-img {
   border-radius: 10px;
+}
+
+.frontpage-main {
+  width: 90vw;
+  max-width: 1100px;
+  margin: auto;
+  margin-top: 50px;
+  border-radius: 5px;
+  box-shadow: 1px 2px 7px 1px black;
+}
+
+.frontpage-title-container {
+  background-color: var(--contrast-color);
+  padding: 20px;
+  border-radius: 5px 5px 0px 0px;
+}
+
+.frontpage-title {
+  text-align: center;
+  font-size: 3.8em;
+  font-family: var(--title-font);
+  color: var(--highlight-color);
+  margin: 0;
+  padding: 0;
+}
+
+.frontpage-subtitle {
+  text-align: center;
+  font-size: 3.3em;
+  font-family: var(--title-font);
+  color: var(--highlight-color);
+  margin: 0;
+  padding: 0;
+}
+
+#charter-introduction {
+  text-align: left;
+  line-height: 1.8em;
+}
+
+.frontpage-content {
+  font-size: 1.5em;
+  font-family: var(--content-font);
+  background-color: hsl(38, 59%, 85%);
+  padding: 30px;
+  border-radius: 0px 0px 5px 5px;
+}
+
+.frontpage-content ol {
+  margin: 0;
+}
+
+.frontpage-content li {
+  margin-bottom: 25px;
+  line-height: 1.5em;
+}
+
+#charter-signature {
+  text-align: right;
+  line-height: 1.8em;
 }
